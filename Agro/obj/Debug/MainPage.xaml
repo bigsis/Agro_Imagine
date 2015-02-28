@@ -68,7 +68,7 @@
 
         <!--- Row 3 4 -->
 
-        <ListBox 
+        <ListBox x:ConnectionId='1' 
             x:Name="News"
             Background="#CCE31414"
             BorderBrush="Transparent"
@@ -77,16 +77,16 @@
             Grid.Column="0" 
             Grid.ColumnSpan="2" 
             Margin="20,10,10,10" 
-            Tapped="News_Tapped"/>
+                                />
  
-        <ListBox 
+        <ListBox x:ConnectionId='2' 
             x:Name="Noti"  
             Grid.Row="2" 
             Grid.RowSpan="2" 
             Grid.Column="2" 
             Grid.ColumnSpan="2" 
             Background="#CC1BBF4D" 
-            Margin="10,10,20,10" Tapped="Noti_Tapped" />
+            Margin="10,10,20,10"                      />
 
 
         <!--- Row 5 6 -->
@@ -108,11 +108,11 @@
                 SelectionHighlightColor="{ThemeResource ApplicationForegroundThemeBrush}"/>
         </StackPanel>
         
-        <Rectangle 
+        <Rectangle x:ConnectionId='3' 
             Grid.Row="4" 
             Grid.Column="2" 
             Fill="#FFFFF01A" 
-            Margin="10" Tapped="Rectangle_Tapped_1"/>
+            Margin="10"                            />
         
         <Rectangle 
             Grid.Row="4" 
@@ -126,11 +126,12 @@
             Fill="#FFFF1A1A" 
             Margin="10,10,10,20"/>
             
-        <Rectangle 
+        <Rectangle x:ConnectionId='4' 
             Grid.Row="5" 
             Grid.Column="3" 
             Fill="#FF1A56FF" 
-            Margin="10,10,20,20" Tapped="Rectangle_Tapped"/>
+            Margin="10,10,20,20"                          />
             
     </Grid>
 </Page>
+

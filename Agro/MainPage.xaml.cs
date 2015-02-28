@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Net.WebClient;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -44,5 +45,29 @@ namespace Agro
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void News_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
+
+        }
+
+        private void Rectangle_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SignUp));
+
+        }
+
+        private void Noti_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Login));
+        }
+
+        private void Rectangle_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SignUp));
+        }
+
+
     }
 }
